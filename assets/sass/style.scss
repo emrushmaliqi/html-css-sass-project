@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600;700&family=Rubik:wght@300;400;600;700;800;900&display=swap");
+@import "variables";
+
+* {
+  font-family: "Oswald", sans-serif;
+}
+
+body {
+  margin: 0;
+  color: $cblack
+}
+
+a {
+  text-decoration: none;
+  color: $cblack;
+}
+
+button {
+    font-family: $rubik;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+//HEADER
+header {
+  display: grid;
+  grid-template-columns: 1fr 7fr 1fr;
+  padding: 0 20px;
+
+  h1 {
+    font-size: 3.5rem;
+    margin: 15px 0 15px 10px;
+  }
+
+  nav {
+    height: 100%;
+    margin-right: 10px;
+    ul {
+      height: 100%;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 30px;
+      padding-right: 20px;
+      margin: 0;
+
+      li:nth-child(1) a {
+        color: $corange;
+      }
+    }
+  }
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-left: 1px solid lightgray;
+
+    &::before {
+        content: '\f3cd';
+        font: var(--fa-font-solid);
+        font-size: 32px;
+        color: $corange;
+        margin-right: 10px;
+    }
+
+    p {
+        margin: 0;
+        font-size: 14px;
+
+        strong {
+            font-size: 16px;
+        }
+      }
+  }
+}
+
+// INTRO
+.intro {
+  background-color: $corange;
+  display: flex;
+  padding: 48px 0;
+
+  h2 {
+    margin: 0;
+  }
+
+ 
+
+  &-text {
+    margin: auto 0;
+    width: 45%;
+    padding: 0 48px;
+
+    h1 {
+        font-size: 5.5rem;
+        line-height: 1.2;
+        margin: 0;
+    }
+
+    p {
+        font-family: $rubik;
+        font-size: 1rem;
+        line-height: 1.3;
+    }
+
+    button {
+        color: $cwhite;
+        font-size: 1rem;
+        padding: 17px 60px;
+        margin-top: 15px;
+
+        &:hover {
+            background-color: $hoverBlackBtn;
+        }
+
+    }
+  }
+
+  &-img {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+}
+
+
+// ABOUT
+
+.about {
+    margin: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+    img {
+        width: 540px;
+    }
+
+    div {
+        width: 540px;
+
+        h1 {
+            font-size: 3.5rem;
+            line-height: 1.2;
+            margin: 0 0 10px;
+        }
+
+        h5 {
+            font-size: 20px;
+            color: $corange;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-family: $rubik;
+            line-height: 1.3;
+            color: $cgray;
+            margin-bottom: 1.5rem;
+        }
+
+        button {
+            background-color: $corange;
+            color: $cblack;
+            padding: 20px 48px;
+            border: none;
+
+            &:hover {
+                background-color: #f09800;
+            }
+        }
+    }
+}
+
+// SERVICES
+
+.services {
+    max-width: 1040px;
+    margin: 0 auto;
+
+    h1 {
+        font-size: 3.5rem;
+        text-align: center;
+    }
+
+    > div {
+        display: flex;
+        // justify-content: center;
+        gap: 25px;
+
+        div {
+            border-radius: 5px;
+            box-sizing: border-box;
+            height: 300px;
+            padding: 48px;
+            background-color: $bgray;
+            transition: all 500ms ease-in-out;
+
+            i {
+                font-size: 3rem;
+                color: $corange;
+            }
+
+            h4 {
+                font-size: 1.5rem;
+                margin: 1rem 0;
+                line-height: 1.1;
+                transition: all 500ms ease-in-out;
+
+                span {
+                    display: block;
+                    color: $cgray;
+                }
+            }
+
+            p {
+                color: $cgray;
+            }
+
+            &:hover {
+                background-color: $cblack;
+
+                h4 {
+                    color: $cwhite;
+                }
+            }
+        }
+    }
+}
