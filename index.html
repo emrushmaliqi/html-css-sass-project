@@ -12,18 +12,19 @@
     <title>DOT.NET</title>
   </head>
   <body>
-    <header>
+    <header id="home">
       <h1>DOT.NET</h1>
       <nav>
         <ul>
-          <li><a href="">HOME</a></li>
-          <li><a href="">ABOUT</a></li>
-          <li><a href="">SERVICES</a></li>
-          <li><a href="">PRICES</a></li>
-          <li><a href="">PROJECTS</a></li>
-          <li><a href="">PAGES</a></li>
-          <li><a href="">CONTACT</a></li>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#services">SERVICES</a></li>
+          <li><a href="#prices">PRICES</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#">PAGES <i class="fa-solid fa-caret-down"></i></a></li>
+          <li><a href="#contact">CONTACT</a></li>
         </ul>
+        <i class="fa-solid fa-bars dropdown"></i>
       </nav>
       <div>
         <p>
@@ -48,7 +49,7 @@
       </div>
     </main>
 
-    <section class="about">
+    <section id="about" class="about">
       <div class="container">
         <img src="./assets/images/about.jpg" alt="" />
         <div>
@@ -71,7 +72,7 @@
       </div>
     </section>
 
-    <section class="services">
+    <section id="services" class="services">
       <div class="container">
         <h1>OUR CREATIVE SERVICES</h1>
         <div>
@@ -99,7 +100,7 @@
       </div>
     </section>
 
-    <section class="projects">
+    <section id="projects" class="projects">
       <div class="container">
         <h1>VISIT OUR PROJECTS</h1>
         <div class="projects-buttons">
@@ -131,7 +132,7 @@
       </div>
     </section>
 
-    <section class="pricing">
+    <section id="prices" class="pricing">
       <div class="container">
         <h1>COMPETITIVE PRICING</h1>
         <div>
@@ -169,7 +170,7 @@
       </div>
     </section>
 
-    <section class="team">
+    <section id="team" class="team">
       <div class="container">
         <h1>MEET OUR TEAM</h1>
         <div class="team-grid">
@@ -178,10 +179,13 @@
             <div>
                 <div>
                     <a href="https://twitter.com"
+                    target="_blank"
               ><i class="fa-brands fa-twitter"></i></a>
             <a href="https://facebook.com"
+            target="_blank"
               ><i class="fa-brands fa-facebook-f"></i></a>
             <a href="https://linkedin.com"
+            target="_blank"
               ><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
             </div>
@@ -193,10 +197,13 @@
             <div>
                 <div>
                     <a href="https://twitter.com"
+                    target="_blank"
               ><i class="fa-brands fa-twitter"></i></a>
             <a href="https://facebook.com"
+            target="_blank"
               ><i class="fa-brands fa-facebook-f"></i></a>
             <a href="https://linkedin.com"
+            target="_blank"
               ><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
             </div>
@@ -208,11 +215,14 @@
             <div>
                 <div>
                     <a href="https://twitter.com"
+                    target="_blank"
               ><i class="fa-brands fa-twitter"></i></a>
             <a href="https://facebook.com"
+            target="_blank"
               ><i class="fa-brands fa-facebook-f"></i
             ></a>
             <a href="https://linkedin.com"
+            target="_blank"
               ><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
             </div>
@@ -257,7 +267,7 @@
         </div>
       </div>
     </section>
-    <section class="contact">
+    <section id="contact" class="contact">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d48338.40908016469!2d-74.03437193290924!3d40.78070388416735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1673992138731!5m2!1sen!2s"
         loading="lazy"
@@ -265,11 +275,11 @@
       ></iframe>
       <form>
         <div>
-          <input type="text" placeholder="Your Name" />
-          <input type="text" placeholder="Your Email" />
+          <input type="text" placeholder="Your Name" required />
+          <input type="text" placeholder="Your Email" required />
         </div>
-        <input type="text" placeholder="Subject" />
-        <textarea cols="30" rows="10" placeholder="Message"></textarea>
+        <input type="text" placeholder="Subject" required />
+        <textarea cols="30" rows="10" placeholder="Message" required></textarea>
         <button>SEND MESSAGE</button>
       </form>
     </section>
@@ -285,15 +295,19 @@
           <h6>FOLLOW US</h6>
           <div>
             <a href="https://twitter.com"
+            target="_blank"
               ><i class="fa-brands fa-twitter"></i
             ></a>
             <a href="https://facebook.com"
+            target="_blank"
               ><i class="fa-brands fa-facebook-f"></i
             ></a>
             <a href="https://linkedin.com"
+            target="_blank"
               ><i class="fa-brands fa-linkedin-in"></i
             ></a>
             <a href="https://instagram.com"
+            target="_blank"
               ><i class="fa-brands fa-instagram"></i
             ></a>
           </div>
@@ -315,12 +329,12 @@
         <div>
           <h4>QUICK LINKS</h4>
           <ul>
-            <li><i class="fa-solid fa-angle-right"></i>Home</li>
-            <li><i class="fa-solid fa-angle-right"></i>About Us</li>
-            <li><i class="fa-solid fa-angle-right"></i>Our Services</li>
-            <li><i class="fa-solid fa-angle-right"></i>Pricing Plan</li>
-            <li><i class="fa-solid fa-angle-right"></i>Meet The Team</li>
-            <li><i class="fa-solid fa-angle-right"></i>Contact Us</li>
+            <li><a href="#home"><i class="fa-solid fa-angle-right"></i>Home</a></li>
+            <li><a href="#about"><i class="fa-solid fa-angle-right"></i>About Us</a></li>
+            <li><a href="#services"><i class="fa-solid fa-angle-right"></i>Our Services</a></li>
+            <li><a href="#prices"><i class="fa-solid fa-angle-right"></i>Pricing Plan</a></li>
+            <li><a href="#team"><i class="fa-solid fa-angle-right"></i>Meet The Team</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-angle-right"></i>Contact Us</a></li>
           </ul>
         </div>
         <div>
